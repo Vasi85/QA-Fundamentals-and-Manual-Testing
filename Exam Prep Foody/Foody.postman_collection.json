@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "ced9e45f-2b96-4b98-9a5a-0fef948befd2",
+		"name": "Foody",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39956208"
+	},
+	"item": [
+		{
+			"name": "/api/User/Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"VasiMi\",\r\n    \"firstName\": \"Vasi\",\r\n    \"midName\": \"Biser\",\r\n    \"lastName\": \"Mincheva\",\r\n    \"email\": \"Malko.Zaio@abv.bg\",\r\n    \"password\": \"Parola12\",\r\n    \"rePassword\": \"Parola12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:86/api/User/Create",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"User",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/User/Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"VasiMi\",\r\n    \"password\": \"Parola12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:86/api/User/Authentication",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"User",
+						"Authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Food/Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJlY2RmMDRhNC0zYmFjLTQ4MjktOTFmYy1iMWY3NGVkYWZlMWMiLCJpYXQiOiIxMi8xMS8yMDI0IDE3OjM4OjUxIiwiVXNlcklkIjoiYTAxNDk5MDItYzM1Zi00NTQ2LWYwY2QtMDhkZDE2YmFhNGJkIiwiRW1haWwiOiJNYWxrby5aYWlvQGFidi5iZyIsIlVzZXJOYW1lIjoiVmFzaU1pIiwiZXhwIjoxNzMzOTYwMzMxLCJpc3MiOiJGb29keV9BcHBfU29mdFVuaSIsImF1ZCI6IkZvb2R5X1dlYkFQSV9Tb2Z0VW5pIn0.Xtzu59YAv27RxLyfM91wnwZCqmn50P_cInv2PgvCZqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"tasty\",\r\n    \"description\": \"something sweet\",\r\n    \"url\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:86/api/Food/Create",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"Food",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Food/Create with pic",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJlY2RmMDRhNC0zYmFjLTQ4MjktOTFmYy1iMWY3NGVkYWZlMWMiLCJpYXQiOiIxMi8xMS8yMDI0IDE3OjM4OjUxIiwiVXNlcklkIjoiYTAxNDk5MDItYzM1Zi00NTQ2LWYwY2QtMDhkZDE2YmFhNGJkIiwiRW1haWwiOiJNYWxrby5aYWlvQGFidi5iZyIsIlVzZXJOYW1lIjoiVmFzaU1pIiwiZXhwIjoxNzMzOTYwMzMxLCJpc3MiOiJGb29keV9BcHBfU29mdFVuaSIsImF1ZCI6IkZvb2R5X1dlYkFQSV9Tb2Z0VW5pIn0.Xtzu59YAv27RxLyfM91wnwZCqmn50P_cInv2PgvCZqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Cupcake\",\r\n    \"description\": \"sweety\",\r\n    \"url\": \"https://www.kindpng.com/picc/m/733-7335686_bakery-sweets-chocolate-cupcake-with-blue-topping-hd.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:86/api/Food/Create",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"Food",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Food/Search?keyword=tasty 2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJlY2RmMDRhNC0zYmFjLTQ4MjktOTFmYy1iMWY3NGVkYWZlMWMiLCJpYXQiOiIxMi8xMS8yMDI0IDE3OjM4OjUxIiwiVXNlcklkIjoiYTAxNDk5MDItYzM1Zi00NTQ2LWYwY2QtMDhkZDE2YmFhNGJkIiwiRW1haWwiOiJNYWxrby5aYWlvQGFidi5iZyIsIlVzZXJOYW1lIjoiVmFzaU1pIiwiZXhwIjoxNzMzOTYwMzMxLCJpc3MiOiJGb29keV9BcHBfU29mdFVuaSIsImF1ZCI6IkZvb2R5X1dlYkFQSV9Tb2Z0VW5pIn0.Xtzu59YAv27RxLyfM91wnwZCqmn50P_cInv2PgvCZqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:86/api/Food/Search?keyword=tasty 2",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"Food",
+						"Search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "tasty 2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Food/Edit/0f99cc33-c394-4a77-e05a-08dd16bb2a07",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJlY2RmMDRhNC0zYmFjLTQ4MjktOTFmYy1iMWY3NGVkYWZlMWMiLCJpYXQiOiIxMi8xMS8yMDI0IDE3OjM4OjUxIiwiVXNlcklkIjoiYTAxNDk5MDItYzM1Zi00NTQ2LWYwY2QtMDhkZDE2YmFhNGJkIiwiRW1haWwiOiJNYWxrby5aYWlvQGFidi5iZyIsIlVzZXJOYW1lIjoiVmFzaU1pIiwiZXhwIjoxNzMzOTYwMzMxLCJpc3MiOiJGb29keV9BcHBfU29mdFVuaSIsImF1ZCI6IkZvb2R5X1dlYkFQSV9Tb2Z0VW5pIn0.Xtzu59YAv27RxLyfM91wnwZCqmn50P_cInv2PgvCZqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    [\r\n    {\r\n        \"path\": \"/name\",\r\n        \"op\": \"replace\",\r\n        \"value\": \"Very Tasty\"\r\n    }\r\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:86/api/Food/Edit/0f99cc33-c394-4a77-e05a-08dd16bb2a07",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"Food",
+						"Edit",
+						"0f99cc33-c394-4a77-e05a-08dd16bb2a07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Food/Delete/0f99cc33-c394-4a77-e05a-08dd16bb2a07",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJlY2RmMDRhNC0zYmFjLTQ4MjktOTFmYy1iMWY3NGVkYWZlMWMiLCJpYXQiOiIxMi8xMS8yMDI0IDE3OjM4OjUxIiwiVXNlcklkIjoiYTAxNDk5MDItYzM1Zi00NTQ2LWYwY2QtMDhkZDE2YmFhNGJkIiwiRW1haWwiOiJNYWxrby5aYWlvQGFidi5iZyIsIlVzZXJOYW1lIjoiVmFzaU1pIiwiZXhwIjoxNzMzOTYwMzMxLCJpc3MiOiJGb29keV9BcHBfU29mdFVuaSIsImF1ZCI6IkZvb2R5X1dlYkFQSV9Tb2Z0VW5pIn0.Xtzu59YAv27RxLyfM91wnwZCqmn50P_cInv2PgvCZqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:86/api/Food/Delete/0f99cc33-c394-4a77-e05a-08dd16bb2a07",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"Food",
+						"Delete",
+						"0f99cc33-c394-4a77-e05a-08dd16bb2a07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Info/Methods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:86/api/Info/Methods",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"Info",
+						"Methods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Food/All",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJlY2RmMDRhNC0zYmFjLTQ4MjktOTFmYy1iMWY3NGVkYWZlMWMiLCJpYXQiOiIxMi8xMS8yMDI0IDE3OjM4OjUxIiwiVXNlcklkIjoiYTAxNDk5MDItYzM1Zi00NTQ2LWYwY2QtMDhkZDE2YmFhNGJkIiwiRW1haWwiOiJNYWxrby5aYWlvQGFidi5iZyIsIlVzZXJOYW1lIjoiVmFzaU1pIiwiZXhwIjoxNzMzOTYwMzMxLCJpc3MiOiJGb29keV9BcHBfU29mdFVuaSIsImF1ZCI6IkZvb2R5X1dlYkFQSV9Tb2Z0VW5pIn0.Xtzu59YAv27RxLyfM91wnwZCqmn50P_cInv2PgvCZqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:86/api/Food/All",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"Food",
+						"All"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
