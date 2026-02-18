@@ -1,0 +1,21 @@
+# Foody Web Application – Manual QA Project
+
+## Description
+Manual testing project based on functional requirements specification.
+
+## Scope
+- Test case design
+- Bug reporting
+- API testing with Postman
+
+## Tools used
+- Excel (Test management & Bug tracking)
+- Postman
+- Browser testing (Chrome, Edge)
+
+## Covered areas
+- User registration
+- Login
+- Profile management
+- Food creation & management
+- API endpoints
