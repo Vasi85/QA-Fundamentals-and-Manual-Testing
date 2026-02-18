@@ -1,6 +1,6 @@
 # Regular Exam – TimeWise Web App Testing
 
-This project contains manual and API testing artifacts created during QA training and exam preparation.
+This project contains manual and API testing artifacts created during QA exam.
 
 ## Contents
 
@@ -18,5 +18,3 @@ Functional testing of TimeWise web application including:
 * Task editing, status change and deletion
 * Navigation and logout functionality
 * API testing with Postman
-
-Created as part of QA course practice and regular exam preparation.
