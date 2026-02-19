@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "0397f11d-8e16-49f2-afdd-aaf50a86900d",
+		"name": "RevueCrafters",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39956208"
+	},
+	"item": [
+		{
+			"name": "Methods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://d2925tksfvgq8c.cloudfront.net",
+					"protocol": "https",
+					"host": [
+						"d2925tksfvgq8c",
+						"cloudfront",
+						"net"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/User/Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"VM\",\r\n    \"email\": \"Zaio@gmail.com\",\r\n    \"password\": \"12345p\",\r\n    \"rePassword\": \"12345p\",\r\n    \"acceptedAgreement\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://d2925tksfvgq8c.cloudfront.net/api/User/Create",
+					"protocol": "https",
+					"host": [
+						"d2925tksfvgq8c",
+						"cloudfront",
+						"net"
+					],
+					"path": [
+						"api",
+						"User",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/User/Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Zaio@gmail.com\",\r\n    \"password\": \"12345p\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://d2925tksfvgq8c.cloudfront.net/api/User/Authentication",
+					"protocol": "https",
+					"host": [
+						"d2925tksfvgq8c",
+						"cloudfront",
+						"net"
+					],
+					"path": [
+						"api",
+						"User",
+						"Authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Revue/All",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJiZTU2ZDNjNC0yNDU3LTRhZjItYmNiOC1kZGY3ZmIyODMyNjIiLCJpYXQiOiIxMi8xMi8yMDI0IDEzOjE2OjA3IiwiVXNlcklkIjoiMGZiOTA4YzctYWI1ZS00ZmM0LWNlZTYtMDhkZDE3YWIwZjU3IiwiRW1haWwiOiJaYWlvQGdtYWlsLmNvbSIsIlVzZXJOYW1lIjoiVk0iLCJleHAiOjE3MzQwMzA5NjcsImlzcyI6IlJldnVlTWFrZXJfQXBwX1NvZnRVbmkiLCJhdWQiOiJSZXZ1ZU1ha2VyX1dlYkFQSV9Tb2Z0VW5pIn0.VHKveC0CvfMPm_Hh_kw5YDOlTwyO0aOEun3RWrOUVAs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://d2925tksfvgq8c.cloudfront.net/api/Revue/All",
+					"protocol": "https",
+					"host": [
+						"d2925tksfvgq8c",
+						"cloudfront",
+						"net"
+					],
+					"path": [
+						"api",
+						"Revue",
+						"All"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Revue/Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJiZTU2ZDNjNC0yNDU3LTRhZjItYmNiOC1kZGY3ZmIyODMyNjIiLCJpYXQiOiIxMi8xMi8yMDI0IDEzOjE2OjA3IiwiVXNlcklkIjoiMGZiOTA4YzctYWI1ZS00ZmM0LWNlZTYtMDhkZDE3YWIwZjU3IiwiRW1haWwiOiJaYWlvQGdtYWlsLmNvbSIsIlVzZXJOYW1lIjoiVk0iLCJleHAiOjE3MzQwMzA5NjcsImlzcyI6IlJldnVlTWFrZXJfQXBwX1NvZnRVbmkiLCJhdWQiOiJSZXZ1ZU1ha2VyX1dlYkFQSV9Tb2Z0VW5pIn0.VHKveC0CvfMPm_Hh_kw5YDOlTwyO0aOEun3RWrOUVAs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Test1\",\r\n    \"url\": \"\",\r\n    \"description\": \"Test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://d2925tksfvgq8c.cloudfront.net/api/Revue/Create",
+					"protocol": "https",
+					"host": [
+						"d2925tksfvgq8c",
+						"cloudfront",
+						"net"
+					],
+					"path": [
+						"api",
+						"Revue",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Revue/Create with pic",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJiZTU2ZDNjNC0yNDU3LTRhZjItYmNiOC1kZGY3ZmIyODMyNjIiLCJpYXQiOiIxMi8xMi8yMDI0IDEzOjE2OjA3IiwiVXNlcklkIjoiMGZiOTA4YzctYWI1ZS00ZmM0LWNlZTYtMDhkZDE3YWIwZjU3IiwiRW1haWwiOiJaYWlvQGdtYWlsLmNvbSIsIlVzZXJOYW1lIjoiVk0iLCJleHAiOjE3MzQwMzA5NjcsImlzcyI6IlJldnVlTWFrZXJfQXBwX1NvZnRVbmkiLCJhdWQiOiJSZXZ1ZU1ha2VyX1dlYkFQSV9Tb2Z0VW5pIn0.VHKveC0CvfMPm_Hh_kw5YDOlTwyO0aOEun3RWrOUVAs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Cupcake1\",\r\n    \"url\": \"https://www.kindpng.com/picc/m/733-7335686_bakery-sweets-chocolate-cupcake-with-blue-topping-hd.png\",\r\n    \"description\": \"tasty\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://d2925tksfvgq8c.cloudfront.net/api/Revue/Create",
+					"protocol": "https",
+					"host": [
+						"d2925tksfvgq8c",
+						"cloudfront",
+						"net"
+					],
+					"path": [
+						"api",
+						"Revue",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Revue/Edit?revueId=175f9fe1-cfa9-46ff-135f-08dd177a6adb",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJiZTU2ZDNjNC0yNDU3LTRhZjItYmNiOC1kZGY3ZmIyODMyNjIiLCJpYXQiOiIxMi8xMi8yMDI0IDEzOjE2OjA3IiwiVXNlcklkIjoiMGZiOTA4YzctYWI1ZS00ZmM0LWNlZTYtMDhkZDE3YWIwZjU3IiwiRW1haWwiOiJaYWlvQGdtYWlsLmNvbSIsIlVzZXJOYW1lIjoiVk0iLCJleHAiOjE3MzQwMzA5NjcsImlzcyI6IlJldnVlTWFrZXJfQXBwX1NvZnRVbmkiLCJhdWQiOiJSZXZ1ZU1ha2VyX1dlYkFQSV9Tb2Z0VW5pIn0.VHKveC0CvfMPm_Hh_kw5YDOlTwyO0aOEun3RWrOUVAs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Test 18\",\r\n    \"url\": \"\",\r\n    \"description\": \"Test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://d2925tksfvgq8c.cloudfront.net/api/Revue/Edit?revueId=175f9fe1-cfa9-46ff-135f-08dd177a6adb",
+					"protocol": "https",
+					"host": [
+						"d2925tksfvgq8c",
+						"cloudfront",
+						"net"
+					],
+					"path": [
+						"api",
+						"Revue",
+						"Edit"
+					],
+					"query": [
+						{
+							"key": "revueId",
+							"value": "175f9fe1-cfa9-46ff-135f-08dd177a6adb"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
